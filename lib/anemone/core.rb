@@ -244,7 +244,7 @@ module Anemone
       unless links.nil?
         return links.select { |link| visit_link?(link, page) }.map { |link| link.dup }
       end
-      return nil
+      return []
     end
 
     #
